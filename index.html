@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Patida Anket Formu</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Patika Anket Formu</h1>
+      <p id="description" class="description text-center">Platformumuzu geliştirmemiz için zaman ayırdığınızdan ötürü teşekkür ederiz</p>
+    </header>
+    <form action="" id="survey-form" method="post">
+      <div class="form-group">
+        <label for="name" id="name-label">
+          Ad Soyad
+        </label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Adınızı girin" required />
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">
+          E-posta
+        </label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Elektronik postanızı girin" required />
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label">
+          Yaş
+          <span class="clue">(Zorunlu değil)</span>
+        </label>
+        <input type="number" name="age" id="number" class="form-control" min="10" max="99" placeholder="Yaş" />
+      </div>
+      <div class="form-group">
+        <p>Mevcut durumunuzu en iyi hangisi tanımlar?</p>
+        <select name="role" id="dropdown" class="form-control" required>
+          <option value="" selected disabled>Mevcut durumunuzu seçin</option>
+          <option value="student">Talebe</option>
+          <option value="job">Tam Zamanlı Çalışan</option>
+          <option value="learner">Alaylı Talebe</option>
+          <option value="preferNo">Belirtmek istemiyorum</option>
+          <option value="other">Diğer</option>
+        </select>
+      </div>  
+      <div class="form-group">
+        <label for="definitely">
+          <input type="radio" name="user-recommend" id="definitely" class="input-radio" value="definitely" required />
+          Kesin
+        </label>
+        <label for="maybe">
+          <input type="radio" name="user-recommend" id="maybe" class="input-radio" value="maybe" />
+          Belki
+        </label>
+        <label for="not-sure">
+          <input type="radio" name="user-recommend" id="not-sure" class="input-radio" value="notSure" />
+          Emin Değilim
+        </label>
+      </div>
+      <div class="form-group">
+        <p>Patika'nın en sevdiğiniz yanı nedir?</p>
+        <select name="mostLike" id="most-like" class="form-control" required>
+          <option value="" disabled selected>Bir şıkkı seçin</option>
+          <option value="challanges">Sınamalar</option>
+          <option value="projects">Projeler</option>
+          <option value="community">Camia</option>
+          <option value="openSource">Canlı Yayınlar</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>
+          Nelerin geliştirilmesini istersiniz?
+          <span class="clue">Uygun olan tüm kutuları işaretleyin</span>
+        </p>
+        <label for="fep">
+          <input type="checkbox" name="prefer" id="fep" value="front-end-projects" class="input-checkbox" />
+          Front-end Projeleri
+        </label>
+        <label for="bep">
+          <input type="checkbox" name="prefer" id="bep" value="back-end-projects" class="input-checkbox" />
+          Back-end Projeleri
+        </label>
+        <label for="dv">
+          <input type="checkbox" name="prefer" id="dv" value="data-visualization" class="input-checkbox" />
+          Veri Görüntüleme
+        </label>
+        <label for="c">
+          <input type="checkbox" name="prefer" id="c" value="challanges" class="input-checkbox" />
+          Sınamalar
+        </label>
+        <label for="osc">
+          <input type="checkbox" name="prefer" id="osc" value="open-source-community" class="input-checkbox" />
+          Camia
+        </label>
+        <label for="ghr">
+          <input type="checkbox" name="prefer" id="ghr" value="gitter-help-rooms" class="input-checkbox" />
+          Git Kullanıcıları Dayanışma Odaları
+        </label>
+        <label for="v">
+          <input type="checkbox" name="prefer" id="v" value="videos" class="input-checkbox" />
+          Videolar
+        </label>
+        <label for="cm">
+          <input type="checkbox" name="prefer" id="cm" value="city-meetups" class="input-checkbox" />
+          Şehir Buluşmaları
+        </label>
+        <label for="w">
+          <input type="checkbox" name="prefer" id="w" value="wiki" class="input-checkbox" />
+          Ansiklopedi Bilgisi
+        </label>
+        <label for="f">
+          <input type="checkbox" name="prefer" id="f" value="forum" class="input-checkbox" />
+          Forum
+        </label>
+        <label for="ac">
+          <input type="checkbox" name="prefer" id="ac" value="additional-courses" class="input-checkbox" />
+          Ek Dersler
+        </label>
+      </div>
+      <div class="form-group">
+        <p>Herhangi bir yorum veya tavsiyeniz?</p>
+        <textarea name="comment" id="comments" class="input-textarea" placeholder="Yorumunuzu buraya yazın"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Gönder</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

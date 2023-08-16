@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #eeeeee;
+
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-image:
+    linear-gradient(135deg,#b6b6ff70,#fcff7e70),
+    url(https://images.pexels.com/photos/16129703/pexels-photo-16129703/free-photo-of-adam-sira-calismak-oturmak.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  width: 34%;
+  min-width: 480px;
+  margin: 3.123rem auto 0;
+}
+
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 0.1875rem;
+  color: #444bff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  font-weight: 555;
+  line-height: 1.2;
+  font-style: italic;
+}
+
+.text-center {
+  text-align: center;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+h1, p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+form {
+  background-image: linear-gradient(135deg,#444aff95,#e463f995 75%,#ffbf5e95 105%);
+  padding: 2.5rem;
+  border-radius: 0.25rem;
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+input, button, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #FFF;
+  background-clip: padding-box;
+  border: 1px solid #CED4DA;
+  border-radius: 0.25rem;
+}
+
+.form-control:focus {
+  border-color: #80BDFF;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: #E4E4E4E4;
+}
+
+.input-radio, .input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+button {
+  border: none;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: #444bff;
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
