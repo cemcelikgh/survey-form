@@ -1,6 +1,8 @@
-# survey-form-freecodecamp
-Build a survey form to collect data from users
+# survey-form
+freeCodeCamp Responsive Web Design Certification Project
+<br>Survey Form
+<br>A survey form to collect data from users
 
-https://www.freecodecamp.org/learn
+Browse: <https://cemcelikgh.github.io/survey-form/>
 
-![Image](https://images2.imgbox.com/f3/b6/6cY2iS3W_o.jpg)
+[![Survey Form Preview](./assets/survey-form-preview.jpg "Browse Survey Form")](https://cemcelikgh.github.io/survey-form/)

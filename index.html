@@ -2,16 +2,16 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css" />
-  <title>Patida Anket Formu</title>
+  <title>Patika Anket Formu</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/fcc-glyph.svg">
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <div class="container">
     <header class="header">
       <h1 id="title" class="text-center">Patika Anket Formu</h1>
-      <p id="description" class="description text-center">Platformumuzu geliştirmemiz için zaman ayırdığınızdan ötürü teşekkür ederiz</p>
+      <p id="description" class="description text-center">Platformumuzu geliştirmemize zaman ayırdığınız için teşekkür ederiz</p>
     </header>
     <form action="" id="survey-form" method="post">
       <div class="form-group">
@@ -43,11 +43,12 @@
           <option value="preferNo">Belirtmek istemiyorum</option>
           <option value="other">Diğer</option>
         </select>
-      </div>  
+      </div>
       <div class="form-group">
+        <p>Patika'yı arkadaşınıza tavsiye eder misiniz?</p>
         <label for="definitely">
           <input type="radio" name="user-recommend" id="definitely" class="input-radio" value="definitely" required />
-          Kesin
+          Elbette
         </label>
         <label for="maybe">
           <input type="radio" name="user-recommend" id="maybe" class="input-radio" value="maybe" />
@@ -55,7 +56,7 @@
         </label>
         <label for="not-sure">
           <input type="radio" name="user-recommend" id="not-sure" class="input-radio" value="notSure" />
-          Emin Değilim
+          Emin değilim
         </label>
       </div>
       <div class="form-group">
@@ -71,7 +72,7 @@
       <div class="form-group">
         <p>
           Nelerin geliştirilmesini istersiniz?
-          <span class="clue">Uygun olan tüm kutuları işaretleyin</span>
+          <span class="clue">(Uygun olan tüm kutuları işaretleyin)</span>
         </p>
         <label for="fep">
           <input type="checkbox" name="prefer" id="fep" value="front-end-projects" class="input-checkbox" />
@@ -81,10 +82,6 @@
           <input type="checkbox" name="prefer" id="bep" value="back-end-projects" class="input-checkbox" />
           Back-end Projeleri
         </label>
-        <label for="dv">
-          <input type="checkbox" name="prefer" id="dv" value="data-visualization" class="input-checkbox" />
-          Veri Görüntüleme
-        </label>
         <label for="c">
           <input type="checkbox" name="prefer" id="c" value="challanges" class="input-checkbox" />
           Sınamalar
@@ -93,10 +90,6 @@
           <input type="checkbox" name="prefer" id="osc" value="open-source-community" class="input-checkbox" />
           Camia
         </label>
-        <label for="ghr">
-          <input type="checkbox" name="prefer" id="ghr" value="gitter-help-rooms" class="input-checkbox" />
-          Git Kullanıcıları Dayanışma Odaları
-        </label>
         <label for="v">
           <input type="checkbox" name="prefer" id="v" value="videos" class="input-checkbox" />
           Videolar
@@ -104,10 +97,6 @@
         <label for="cm">
           <input type="checkbox" name="prefer" id="cm" value="city-meetups" class="input-checkbox" />
           Şehir Buluşmaları
-        </label>
-        <label for="w">
-          <input type="checkbox" name="prefer" id="w" value="wiki" class="input-checkbox" />
-          Ansiklopedi Bilgisi
         </label>
         <label for="f">
           <input type="checkbox" name="prefer" id="f" value="forum" class="input-checkbox" />
